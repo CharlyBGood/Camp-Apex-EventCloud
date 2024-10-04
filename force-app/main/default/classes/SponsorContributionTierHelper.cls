@@ -13,8 +13,6 @@ public with sharing class SponsorContributionTierHelper {
             } else if (sp.CAMPX__ContributionAmount__c >= 5000) {
                 sp.CAMPX__Tier__c = 'Gold';
             }
-
-            System.debug('Contribution is ' + sp.CAMPX__ContributionAmount__c + ' and tier is ' + sp.CAMPX__Tier__c);
         }
     }
 }
